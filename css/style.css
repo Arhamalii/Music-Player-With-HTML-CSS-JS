@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* overflow: auto; for scrolling */
+  /* scroll-behavior: smooth; for scrolling */
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: antiquewhite;
+}
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+nav {
+  background: #000;
+  height: 5.5rem;
+  display: flex;
+}
+nav ul {
+  display: flex;
+  width: 97%;
+  list-style: none;
+  margin: auto;
+}
+nav ul li {
+  display: flex;
+}
+nav ul a {
+  display: flex;
+  align-items: center;
+}
+nav ul .logo {
+  display: flex;
+  align-self: center;
+  width: 4rem;
+}
+nav ul .logoName {
+  color: #fff;
+  font-size: 2.6rem;
+  margin-left: 1rem;
+  margin-right: 6rem;
+}
+nav ul li a {
+  margin-left: 3.6rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #fff;
+}
+.main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 74.55vh;
+}
+
+.insideMain {
+  margin: auto;
+  background: #000;
+  width: 70%;
+  height: 67vh;
+  border-radius: 1rem;
+  overflow-y: hidden;
+}
+
+.insideMain .mainContent {
+  background: url(../assets/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 90rem;
+  background-position-x: right;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+.insideMain .mainContent .songItem .albumTitle {
+  /* font-size: 3.3rem; */
+  font-size: 2.1vw;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* margin: 3rem 0rem;
+  margin-left: 2rem; */
+}
+.insideMain .mainContent .songItem {
+  margin: 3.7rem;
+  margin-left: 3rem;
+  display: inline-block;
+  width: 38%;
+}
+.insideMain .mainContent .songItem .songWrapper {
+  font-size: 2rem;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3.4rem;
+  background: antiquewhite;
+  border-radius: 4rem;
+  height: 4.5rem;
+}
+.insideMain .mainContent .songItem .marginModified {
+  margin-top: 2rem;
+}
+.insideMain .mainContent .songItem .songWrapper img {
+  margin-left: 2.2rem;
+  width: 9%;
+  height: 3.5rem;
+  border-radius: 50%;
+}
+.insideMain .mainContent .songItem .songWrapper h6 {
+  font-size: 1.7rem;
+}
+.insideMain .mainContent .songItem .songWrapper p {
+  margin-right: 4rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.insideMain .mainContent .songItem .songWrapper i {
+  margin-left: 0.6rem;
+  font-size: 1.7rem;
+}
+.bottomContainer {
+  background: #000;
+  position: sticky;
+  bottom: 0;
+}
+#range {
+  margin-top: 2.8rem;
+  width: 100%;
+}
+
+/* -------input range styling --------------------- */
+input[type="range"] {
+  height: 32px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #008200;
+  background: #1ed760;
+  border-radius: 0px;
+
+  border: 1px solid #18d501;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #00aa00;
+  border: 2px solid #83e584;
+  height: 23px;
+  width: 23px;
+  border-radius: 23px;
+  background: #16a148;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #1ed760;
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #008200;
+  background: #1ed760;
+  border-radius: 0px;
+  border: 1px solid #18d501;
+}
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #00aa00;
+  border: 2px solid #83e584;
+  height: 23px;
+  width: 23px;
+  border-radius: 23px;
+  background: #16a148;
+  cursor: pointer;
+}
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #1ed760;
+  border: 1px solid #18d501;
+  border-radius: 0px;
+  box-shadow: 1px 1px 1px #008200;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #1ed760;
+  border: 1px solid #18d501;
+  border-radius: 0px;
+  box-shadow: 1px 1px 1px #008200;
+}
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px #00aa00;
+  border: 2px solid #83e584;
+  height: 23px;
+  width: 23px;
+  border-radius: 23px;
+  background: #16a148;
+  cursor: pointer;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #1ed760;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #1ed760;
+}
+
+.bottomContainer .boxController {
+  position: sticky;
+  bottom: 0;
+  height: 13.6rem;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.bottomContainer .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottomContainer .icons i {
+  margin: 2rem 1rem;
+  color: #fff;
+  font-size: 4.5rem;
+}
+
+.beforeBottom {
+  display: flex;
+  position: absolute;
+  left: 3rem;
+  top: 7.8rem;
+}
+.afterBottom {
+  position: absolute;
+  right: 1rem;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+#duration {
+  margin-right: 5rem;
+  color: #fff;
+}
+
+#gif {
+  height: 7rem;
+  width: 60px;
+  height: auto;
+  opacity: 0;
+  -webkit-transition: all 1s cubic-bezier(0.59, 0.01, 0.5, 1.03);
+  transition: all 1s cubic-bezier(0.59, 0.01, 0.5, 1.03);
+}
+#durationRight {
+  position: absolute;
+  right: 1rem;
+}
+
+/* --------------------------for responsiveness------------------------ */
+@media screen and (max-width: 1407px) and (min-width: 1261px) {
+  .insideMain .mainContent {
+    background-size: 82rem;
+    background-position-y: bottom;
+  }
+}
+@media screen and (max-width: 1260px) {
+  html {
+    font-size: 55%;
+  }
+  .insideMain .mainContent {
+    background-position-y: bottom;
+  }
+}
+@media screen and (max-width: 1150px) {
+  html {
+    font-size: 48%;
+  }
+
+  .insideMain .mainContent {
+    background-position-y: bottom;
+  }
+}
+@media screen and (max-width: 1050px) {
+  html {
+    font-size: 45%;
+  }
+  .insideMain .mainContent {
+    background-position-y: bottom;
+  }
+}
+
+@media screen and (max-width: 927px) {
+  .insideMain .mainContent .songItem .songWrapper h6 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 873px) {
+  .insideMain .mainContent .songItem {
+    margin: 3.7rem;
+    margin-left: 3rem;
+    display: inline-block;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .insideMain .mainContent .songItem {
+    margin: 3.7rem;
+    margin-left: 3rem;
+    display: inline-block;
+    width: 46%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .insideMain .mainContent .songItem {
+    margin: 3.7rem;
+    margin-left: 3rem;
+    display: inline-block;
+    width: 55%;
+  }
+  .insideMain .mainContent {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url(../assets/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 90rem;
+    background-position-x: right;
+    background-position-y: bottom;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  #gif {
+    display: none;
+  }
+  .insideMain .mainContent .songItem .albumTitle {
+    text-align: center;
+  }
+  .insideMain {
+    display: flex;
+  }
+  .insideMain .mainContent {
+    display: flex;
+  }
+  .insideMain .mainContent .songItem {
+    margin: 3.7rem auto;
+    display: inline-block;
+    justify-content: center;
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .insideMain .mainContent .songItem {
+    margin: 3.7rem auto;
+    display: inline-block;
+    justify-content: center;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 446px) {
+  .insideMain .mainContent .songItem {
+    margin: 3.7rem auto;
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    padding: 0 3rem;
+  }
+  .insideMain .mainContent .songItem .songWrapper h6 {
+    font-size: 1.35rem;
+  }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- ---------------- font awesome-------------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Spotify | English Songs</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <a href="index.html"
+          ><img src="./assets/logo.png" class="logo" alt="logo"
+        /></a>
+        <h3 class="logoName">Spotify</h3>
+      </ul>
+    </nav>
+    <main class="main">
+      <div class="insideMain">
+        <div class="mainContent">
+          <div class="songItem">
+            <h2 class="albumTitle">English Songs Playlist</h2>
+            <div class="songWrapper">
+              <img />
+              <h6></h6>
+              <p>
+                <span class="listDuration">4:00</span>
+                <i id="0" class="far songItemPlay fa-3x fa-play-circle"></i>
+              </p>
+            </div>
+            <div class="songWrapper">
+              <img />
+              <h6></h6>
+              <p>
+                <span class="listDuration">4:39</span>
+                <i id="1" class="far songItemPlay fa-3x fa-play-circle"></i>
+              </p>
+            </div>
+            <div class="songWrapper">
+              <img />
+              <h6></h6>
+              <p>
+                <span class="listDuration">2:57</span>
+
+                <i id="2" class="far songItemPlay fa-3x fa-play-circle"></i>
+              </p>
+            </div>
+            <div class="songWrapper">
+              <img />
+              <h6></h6>
+              <p>
+                <span class="listDuration">3:49</span>
+
+                <i id="3" class="far songItemPlay fa-3x fa-play-circle"></i>
+              </p>
+            </div>
+            <div class="songWrapper">
+              <img />
+              <h6></h6>
+              <p>
+                <span class="listDuration">4:26</span>
+                <i id="4" class="far songItemPlay fa-3x fa-play-circle"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="bottomContainer">
+      <div class="boxController">
+        <input type="range" min="0" max="100" value="0" id="range" />
+        <div class="beforeBottom">
+          <h1 id="duration">00:00</h1>
+          <img id="gif" src="./assets/playing.gif" alt="gif" />
+        </div>
+        <div class="icons">
+          <i class="fa-solid fa-backward-step" id="previousBtn"></i>
+          <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+          <i class="fa-solid fa-forward-step" id="nextBtn"></i>
+        </div>
+        <div class="afterBottom">
+          <h1 id="durationRight">00:00</h1>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
